@@ -89,11 +89,12 @@ const About = () => {
             { name: "css", img: "/assets/css.png" },
             { name: "html", img: "/assets/html.png" },
             { name: "firebase", img: "/assets/firebase.png" },
-            { name: "react", img: "/assets/git.png" },
+            { name: "git", img: "/assets/git.png" },
             { name: "github", img: "/assets/github.png" },
             { name: "wordpress", img: "/assets/wordpress.png" },
             { name: "js", img: "/assets/js.png" },
             { name: "mongo", img: "/assets/mongo.png" },
+            { name: "react", img: "/assets/react.png" },
           ].map((skill) => (
             <div
               key={skill.name}

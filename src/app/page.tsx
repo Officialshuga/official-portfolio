@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { MyComponent } from "@/components/typedJS/typed";
 import gosa from "../../public/gosa.jpg";
+import pic from "../../public/assets/pic.jpg"
 import { Button } from "@/components/ui/button";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoMdDownload } from "react-icons/io";
@@ -22,7 +23,7 @@ import wordpress from "../../public/assets/wordpress.png";
 import Link from "next/link";
 import nura from "../../public/assets/nura.png";
 import bulwark from "../../public/assets/caj.png";
-
+import hotel from "../../public/assets/hotel.png";
 
 export default function Home() {
   return (
@@ -70,7 +71,7 @@ export default function Home() {
 
         <div className="w-full md:w-1/2 flex justify-center">
           <Image
-            src={gosa}
+            src={pic}
             alt="Hanks portrait"
             width={400}
             height={320}
@@ -139,7 +140,7 @@ export default function Home() {
           <div className="group border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition">
             <div className="relative w-full h-48 overflow-hidden">
               <Image
-                src={gosa}
+                src={hotel}
                 alt="Blog Application project"
                 fill
                 className="object-cover group-hover:scale-105 transition duration-300"
