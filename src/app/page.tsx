@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { MyComponent } from "@/components/typedJS/typed";
 import gosa from "../../public/gosa.jpg";
-import pic from "../../public/assets/pic.jpg"
+import pic from "../../public/assets/pic.jpg";
 import { Button } from "@/components/ui/button";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoMdDownload } from "react-icons/io";
@@ -56,16 +56,25 @@ export default function Home() {
             results-driven mindset. My goal is not just to build websites or
             complete tasks, but to create meaningful digital experiences and
             provide dependable support that helps clients stay organized,
-            productive, and focused on growth. </p>
+            productive, and focused on growth.{" "}
+          </p>
 
           <div className="flex flex-col  sm:flex-row gap-4 justify-center md:justify-start">
             <Button className="flex items-center gap-2">
-             <Link href={"/project"}>View Projects</Link>  <FaArrowRight />
+              <Link href={"/project"}>View Projects</Link> <FaArrowRight />
             </Button>
 
-            <Button variant="ghost" className="flex items-center gap-2">
-              Download CV <IoMdDownload />
+            <Button variant="ghost" asChild>
+              <a
+                href="/Hanks-Ehimare-Amanfoh-CV.docx"
+                download
+                className="flex items-center gap-2"
+              >
+                Download CV <IoMdDownload />
+              </a>
             </Button>
+            
+
           </div>
         </div>
 
@@ -135,7 +144,9 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center py-16">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl  font-semibold mb-10">Projects</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-6xl  font-semibold mb-10">
+          Projects
+        </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl px-4">
           <div className="group border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition">
             <div className="relative w-full h-48 overflow-hidden">
@@ -149,18 +160,30 @@ export default function Home() {
             <div className="p-6 flex flex-col gap-3">
               <h3 className="text-xl font-semibold">Hotel Application</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                A responsive hotel booking app that lets users view available rooms and make reservations easily, with simple tools for managing bookings and room details.
+                A responsive hotel booking app that lets users view available
+                rooms and make reservations easily, with simple tools for
+                managing bookings and room details.
               </p>
               <div className="flex gap-3 pt-2">
-                <Button className="flex-1"> <a href="https://nextjs-first-hotel.vercel.app/"> Live Demo</a> </Button>
-                <Button><a href="https://github.com/Officialshuga/nextjs-first-hotel"> Github</a></Button>
+                <Button className="flex-1">
+                  {" "}
+                  <a href="https://nextjs-first-hotel.vercel.app/">
+                    {" "}
+                    Live Demo
+                  </a>{" "}
+                </Button>
+                <Button>
+                  <a href="https://github.com/Officialshuga/nextjs-first-hotel">
+                    {" "}
+                    Github
+                  </a>
+                </Button>
                 {/* <Button href="https://nextjs-first-hotel.vercel.app/" variant="outline" className="flex-1">
                    Github
                 </Button> */}
               </div>
             </div>
           </div>
-
 
           <div className="group border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition">
             <div className="relative w-full h-48 overflow-hidden">
@@ -174,10 +197,15 @@ export default function Home() {
             <div className="p-6 flex flex-col gap-3">
               <h3 className="text-xl font-semibold">Brand Website</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                A modern brand website designed to showcase identity, products, and services with a clean layout, strong visuals, and a seamless user experience across all devices.
+                A modern brand website designed to showcase identity, products,
+                and services with a clean layout, strong visuals, and a seamless
+                user experience across all devices.
               </p>
               <div className="flex gap-3 pt-2">
-                <Button className="flex-1"> <a href="https://obi-new.vercel.app/"> Live Demo</a> </Button>
+                <Button className="flex-1">
+                  {" "}
+                  <a href="https://obi-new.vercel.app/"> Live Demo</a>{" "}
+                </Button>
                 <Button variant="outline" className="flex-1">
                   <a href="https://github.com/Officialshuga/obi-new"> Github</a>
                 </Button>
@@ -195,12 +223,18 @@ export default function Home() {
               />
             </div>
             <div className="p-6 flex flex-col gap-3">
-              <h3 className="text-xl font-semibold">Door Manufacturing Company Website</h3>
+              <h3 className="text-xl font-semibold">
+                Door Manufacturing Company Website
+              </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                A modern business website showcasing door products, company expertise, and services with a clean and user-friendly design.
+                A modern business website showcasing door products, company
+                expertise, and services with a clean and user-friendly design.
               </p>
               <div className="flex gap-3 pt-2">
-                <Button className="flex-1"> <a href="https://cajbulwark.com"> Live Demo</a> </Button>
+                <Button className="flex-1">
+                  {" "}
+                  <a href="https://cajbulwark.com"> Live Demo</a>{" "}
+                </Button>
                 {/* <Button variant="outline" className="flex-1">
                   <a href="https://github.com/Officialshuga/artificial-Intelligence"> Github</a>
                 </Button> */}
@@ -220,7 +254,10 @@ export default function Home() {
       </div>
 
       <div className="text-black py-12 text-center">
-        <h1 className="text-6xl font-bold mb-4"> <span className="text-orange-500">My </span> Skills</h1>
+        <h1 className="text-6xl font-bold mb-4">
+          {" "}
+          <span className="text-orange-500">My </span> Skills
+        </h1>
         <p className="text-gray-600 max-w-2xl mx-auto pb-15">
           Here are my technical skills and expertise in web development, design,
           and digital solutions.
