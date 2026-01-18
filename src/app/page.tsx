@@ -66,7 +66,7 @@ export default function Home() {
 
             <Button variant="ghost" asChild>
               <a
-                href="/Hanks-Ehimare-Amanfoh-CV.docx"
+                href="/Hanks-Ehimare-Amanfoh-CV.pdf"
                 download
                 className="flex items-center gap-2"
               >
