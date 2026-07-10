@@ -24,6 +24,8 @@ import Link from "next/link";
 import nura from "../../public/assets/nura.png";
 import bulwark from "../../public/assets/caj.png";
 import hotel from "../../public/assets/hotel.png";
+import lonsxtreme from "../../public/assets/lonsxtreme.png"
+
 
 export default function Home() {
   return (
@@ -66,7 +68,7 @@ export default function Home() {
 
             <Button variant="ghost" asChild>
               <a
-                href="/Hanks-Ehimare-Amanfoh-CV.pdf"
+                href="/Hanks-Ehimare-Amanfoh-CV1.pdf"
                 download
                 className="flex items-center gap-2"
               >
@@ -234,6 +236,35 @@ export default function Home() {
                 <Button className="flex-1">
                   {" "}
                   <a href="https://cajbulwark.com"> Live Demo</a>{" "}
+                </Button>
+                {/* <Button variant="outline" className="flex-1">
+                  <a href="https://github.com/Officialshuga/artificial-Intelligence"> Github</a>
+                </Button> */}
+              </div>
+            </div>
+          </div>
+
+          <div className="group border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition">
+            <div className="relative w-full h-48 overflow-hidden">
+              <Image
+                src={lonsxtreme}
+                alt="Cleaning services"
+                fill
+                className="object-cover group-hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div className="p-6 flex flex-col gap-3">
+              <h3 className="text-xl font-semibold">
+                Canadian cleaning Company
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+               Designed and developed a clean, responsive website that helps a
+               cleaning business promote its services and attract new customers.
+              </p>
+              <div className="flex gap-3 pt-2">
+                <Button className="flex-1">
+                  {" "}
+                  <a href="https://lonsxtremetouch.ca/"> Live Demo</a>{" "}
                 </Button>
                 {/* <Button variant="outline" className="flex-1">
                   <a href="https://github.com/Officialshuga/artificial-Intelligence"> Github</a>
